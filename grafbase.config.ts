@@ -19,5 +19,5 @@ const project = g.type('Project',{
 })
 
 export default config({
-  graph: g,
+  schema: g,
 })
