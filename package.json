@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
     "@headlessui/react": "^1.7.18",
     "@types/jsonwebtoken": "^9.0.6",
     "cloudinary": "^2.0.3",

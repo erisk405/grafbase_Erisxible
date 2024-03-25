@@ -1,5 +1,6 @@
-import { graph, config } from '@grafbase/sdk'
-const g = graph.Standalone()
+import { graph, config } from '@grafbase/sdk';
+
+const g = graph.Standalone();
 
 const user = g.type('User', {
   name: g.string(),
@@ -8,7 +9,8 @@ const user = g.type('User', {
   description: g.string().optional(),
   githubUrl: g.url().optional(),
   linkedInUrl: g.url().optional(),
-})
+});
+
 const project = g.type('Project',{
   title: g.string(),
   description: g.string(),
@@ -16,8 +18,8 @@ const project = g.type('Project',{
   liveSiteUrl: g.url(),
   githubUrl: g.url(),
   category: g.string(),
-})
+});
 
 export default config({
-  schema: g,
-})
+  graph: g,
+});
